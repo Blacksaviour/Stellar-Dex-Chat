@@ -289,7 +289,7 @@ describe('StellarFiatModal fee simulation debounce', () => {
     const mockedContract = await import('@/lib/stellarContract');
     mockedContract.simulateDeposit.mockClear();
 
-    const { getByRole, rerender } = render(
+    const { getByRole } = render(
       React.createElement(StellarFiatModal, {
         isOpen: true,
         onClose,
